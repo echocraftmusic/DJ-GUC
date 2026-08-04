@@ -1,0 +1,38 @@
+@media(max-width:1080px){.header-inner{grid-template-columns:170px 1fr auto}.site-nav{gap:24px}.hero-card{grid-template-columns:minmax(370px,.92fr) minmax(430px,1.08fr)}.hero h1{font-size:clamp(4.6rem,7.7vw,6.4rem)}.feature-strip{grid-template-columns:1fr 1fr}.showcase-grid{grid-template-columns:1fr}.gallery-track figure{flex-basis:calc((100% - 30px)/4)}.era-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.shell,.header-inner{width:min(100% - 32px,var(--max))}.header-inner{height:78px;grid-template-columns:150px 1fr auto}.brand img{width:145px;height:64px}.header-book{display:none}.menu-toggle{display:block;justify-self:end;background:#0c0910;border:1px solid #664075;border-radius:7px;padding:10px}.menu-toggle span{display:block;width:24px;height:2px;background:#fff;margin:5px}.site-nav{display:none;position:absolute;top:78px;left:0;right:0;flex-direction:column;align-items:center;padding:22px;background:#070509;border-bottom:1px solid #6f2d8d}.site-nav.open{display:flex}.hero{padding-top:18px}.hero-card{grid-template-columns:1fr;min-height:0;border-radius:0 0 16px 16px}.hero-copy{padding:45px 30px 34px}.hero h1{font-size:clamp(4.6rem,12vw,6.9rem);max-width:700px}.hero-visual{min-height:620px;background-position:center 27%}.feature-strip{margin-top:14px}.about{grid-template-columns:1fr}.about-image,.about-card{min-height:0}.about-image img{height:auto;max-height:640px}.twitch-layout{grid-template-columns:1fr}.social-grid{grid-template-columns:1fr 1fr}.social-card.twitch{grid-column:1/-1}.contact{grid-template-columns:1fr}}
+@media(max-width:620px){.shell,.header-inner{width:min(100% - 24px,var(--max))}.header-inner{height:72px;grid-template-columns:125px 1fr auto}.brand img{width:120px;height:58px}.site-nav{top:72px}.hero-copy{padding:36px 18px 28px}.hero h1{font-size:clamp(3.65rem,18vw,5.4rem)}.hero-text{font-size:.96rem}.hero-actions{display:grid}.hero-actions .btn{width:100%}.audio-card{grid-template-columns:48px 1fr}.audio-time{display:none}.hero-visual{min-height:470px}.feature-strip{grid-template-columns:1fr}.feature-strip article{min-height:0}.section{padding-block:66px}h2{font-size:3.3rem}.about-card{padding:30px 24px}.about-watermark{width:220px;opacity:.1}.gallery-panel,.twitch-promo{padding:18px}.showcase-heading{display:block}.gallery-shell{padding:0 38px}.gallery-track figure{flex-basis:82%;height:360px}.twitch-promo-media img{height:300px}.era-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.era{min-width:84%;scroll-snap-align:center}.social-grid{grid-template-columns:1fr}.social-card.twitch{grid-column:auto}.form-grid{grid-template-columns:1fr}footer nav{flex-wrap:wrap}}
+@media(max-width:380px){.hero h1{font-size:3.45rem}.hero-visual{min-height:420px}h2{font-size:2.9rem}.gallery-track figure{height:330px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:760px){
+  .audio-card{grid-template-columns:32px 48px 32px minmax(0,1fr);gap:8px}
+  .audio-time{grid-column:4;min-width:0;text-align:left}
+}
+@media(max-width:420px){
+  .audio-card{grid-template-columns:30px 46px 30px minmax(0,1fr);padding:11px 10px}
+  .audio-skip{width:29px;height:29px}
+  .audio-copy strong{font-size:.9rem}
+  .audio-copy p{font-size:.66rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero h1 .diamond-title::after,
+  .hero h1 .diamond-title::before{animation:none!important;opacity:0}
+  .hero h1 .diamond-title{
+    text-shadow:0 1px 0 #fff,0 3px 0 rgba(120,114,128,.48),0 8px 18px rgba(0,0,0,.66),0 0 16px rgba(235,244,255,.2)
+  }
+}
+
+/* v2.7 horizontal showcase responsiveness */
+@media(max-width:1080px){
+  .twitch-promo{grid-template-columns:1fr;}
+  .twitch-promo-copy{padding:10px 4px 0;}
+  .twitch-promo-media{min-height:240px;}
+  .twitch-promo-media img{min-height:240px;}
+}
+@media(max-width:760px){
+  .gallery-track figure{flex-basis:82%;height:360px;}
+  .twitch-promo-media{grid-template-columns:1fr;}
+  .twitch-promo-media img{height:300px;min-height:300px;}
+  .twitch-meta{border-left:0;border-top:1px solid rgba(151,65,188,.55);}
+}
